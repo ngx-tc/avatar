@@ -1,24 +1,34 @@
-# Avatar
+## About
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.0.
+@ngx-tc/avatar is an Angular library that provides developers with an easy and customizable way to display avatars in their applications. The library includes a range of pre-built avatar templates, which can be easily customized to suit the specific needs of your application. These templates include standard avatar shapes, such as circles and squares, as well as customizable options for size, color, and image source.
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name --project avatar` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project avatar`.
-> Note: Don't forget to add `--project avatar` or else it will be added to the default project in your `angular.json` file. 
+Install `@ngx-tc/avatar` in your project:
 
-## Build
+```
+npm install @ngx-tc/avatar
+```
 
-Run `ng build avatar` to build the project. The build artifacts will be stored in the `dist/` directory.
+Import `TcAvatarModule` e.g. in your `app.module.ts`:
+```typescript
+import { TcAvatarModule } from '@ngx-tc/avatar';
 
-## Publishing
+@NgModule({
+  imports: [
+    ...
+    TcAvatarModule
+  ],
+})
+export class AppModule {}
+```
 
-After building your library with `ng build avatar`, go to the dist folder `cd dist/avatar` and run `npm publish`.
+Use the `tc-avatar` component in you app:
+```html
+<tc-avatar [src]="'image source'"></tc-avatar>
+<tc-avatar [initials]="'JD'"></tc-avatar>
+```
 
-## Running unit tests
-
-Run `ng test avatar` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Demo
+To view a working demo of the library in action, please follow the provided link. The demo will allow you to explore the various components and features included in this library and see how they can be used in your Angular applications.
+[http://tc-library.type-code.pro/#/components/avatars](http://tc-library.type-code.pro/#/components/avatars)
