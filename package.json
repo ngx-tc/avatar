@@ -1,6 +1,6 @@
 {
   "name": "@ngx-tc/avatar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "type0code",
   "license": "MIT",
   "description": "Angular UI components library that allows developers to generate customizable avatars with initials or images for Angular applications.",
@@ -14,7 +14,7 @@
     "angular image"
   ],
   "repository": "https://github.com/ngx-tc/avatar",
-  "homepage": "http://tc-library.type-code.pro/#/components/avatar",
+  "homepage": "http://tc-library.type-code.pro/#/components/avatars",
   "config": {
     "access": "public"
   },
