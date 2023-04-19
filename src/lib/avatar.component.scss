@@ -62,11 +62,11 @@
   .avatar-badge {
     background: var(--tc-avatar-badge-bg);
     border-radius: 50%;
-    height: 8px;
+    height: toRem(8);
     position: absolute;
-    right: 6%;
+    inset-inline-end: 6%;
     top: 6%;
-    width: 8px;
+    width: toRem(8);
   }
   &.avatar-load {
     img,
